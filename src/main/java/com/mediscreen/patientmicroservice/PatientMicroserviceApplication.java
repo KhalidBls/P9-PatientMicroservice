@@ -25,8 +25,6 @@ public class PatientMicroserviceApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		//Patient(String firstName, String lastName,String family, String sex,
-		//                   String address, String phone, String dateOfBirth)
 		if(patientService.findAll().isEmpty()){
 			patientService.save(new Patient("test1","patient","TestNone","F","1 Brookside St","1002223333","31/12/1966"));
 			patientService.save(new Patient("test2","patient","TestBorderline","M","2 High St","2003334444","25/06/1945"));
