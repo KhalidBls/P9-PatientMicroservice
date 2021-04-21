@@ -15,37 +15,27 @@ public class Patient {
     private String firstName;
     @NotBlank(message = "Last name is mandatory")
     private String lastName;
-    private String family;
     @NotBlank(message = "sex is mandatory")
     private String sex;
     @NotBlank(message = "address is mandatory")
     private String address;
     @NotBlank(message = "Phone is mandatory")
-    @Pattern(regexp = "^\\d+$",message ="Ne doit contenir que des chiffres")
     private String phone;
     @NotBlank(message = "Date of birth is mandatory")
     private String dateOfBirth;
 
     public Patient(){}
 
-    public Patient(String firstName, String lastName,String family, String sex,
+    public Patient(String firstName, String lastName, String sex,
                    String address, String phone, String dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.sex = sex;
         this.address = address;
         this.phone = phone;
-        this.family = family;
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getFamily() {
-        return family;
-    }
-
-    public void setFamily(String family) {
-        this.family = family;
-    }
 
 
     public String getSex() {

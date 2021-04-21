@@ -39,7 +39,6 @@ public class PatientService {
                     .orElseThrow(() -> new IllegalArgumentException("Invalid patient id :"+ patientToSave.getId()));
             patient.setFirstName(patientToSave.getFirstName());
             patient.setLastName(patientToSave.getLastName());
-            patient.setFamily(patientToSave.getFamily());
             patient.setDateOfBirth(patientToSave.getDateOfBirth());
             patient.setAddress(patientToSave.getAddress());
             patient.setPhone(patientToSave.getPhone());

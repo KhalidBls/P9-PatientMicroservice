@@ -61,7 +61,7 @@ public class PatientRestControllerTest {
     public void testGetPatientById() throws Exception {
 
         //ARRANGE
-        Patient patient = new Patient("bob", "bobby","family X", "M",
+        Patient patient = new Patient("bob", "bobby", "M",
                 "address of bobbies", "0123456789", "01/10/1997");
         patient.setId(77);
 
@@ -84,7 +84,7 @@ public class PatientRestControllerTest {
     @Test
     public void testUpdatePatient() throws Exception {
         //GIVEN
-        Patient patient = new Patient("bob", "bobby","family X", "M",
+        Patient patient = new Patient("bob", "bobby", "M",
                 "address of bobbies", "0123456789", "01/10/1997");
         patient.setId(77);
 
@@ -115,7 +115,7 @@ public class PatientRestControllerTest {
     @Test
     public void testDeleteUser() throws Exception {
         //GIVEN
-        Patient patient = new Patient("bob", "bobby","family X", "M",
+        Patient patient = new Patient("bob", "bobby", "M",
                 "address of bobbies", "0123456789", "01/10/1997");
         patient.setId(77);
 

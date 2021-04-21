@@ -41,7 +41,6 @@ public class PatientRestController {
         patient.setFirstName(patientDetails.getFirstName());
         patient.setLastName(patientDetails.getLastName());
         patient.setAddress(patientDetails.getAddress());
-        patient.setFamily(patientDetails.getFamily());
         patient.setPhone(patientDetails.getPhone());
         patient.setDateOfBirth(patientDetails.getDateOfBirth());
         patient.setSex(patientDetails.getSex());

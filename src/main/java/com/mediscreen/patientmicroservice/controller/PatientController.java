@@ -4,6 +4,7 @@ import com.mediscreen.patientmicroservice.model.Patient;
 import com.mediscreen.patientmicroservice.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
