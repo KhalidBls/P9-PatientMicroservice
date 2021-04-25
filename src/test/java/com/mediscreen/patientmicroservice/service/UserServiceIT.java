@@ -23,10 +23,6 @@ public class UserServiceIT {
     @Test
     public void patientTest() {
 
-        for (Patient patient : patientService.findAll()){
-            patientService.deleteById(patient.getId());
-        }
-
         Patient patient = new Patient();
         patient.setFirstName("bob");
         patient.setLastName("bobby");
